@@ -15,7 +15,7 @@ public class DemoService {
 	public String checkStringEqualsFoo(String inputString) {
 		int unusedLocalVarA;
 		int unusedLocalVarB, unusedLocalVarC;
-		int unusedLocalVarD = 0, newVarE = 1;
+		int unusedLocalVarD = 0;
 
 		dummyInstance.displayHello();
 		
