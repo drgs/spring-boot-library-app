@@ -23,8 +23,6 @@ public class DemoService {
 					"Input string does not match foo";		
 	}
 
-//					"Input string does not match foo";
-//	}
 //	
 	
 	public List<String> getInputStringsList() {
