@@ -41,7 +41,6 @@ public class DemoService {
 	
 	public List<String> getInputStringsList() {
 		String dummyStr = "bar";
-		boolean dummyBool = "foo".equals(dummyStr);
 		if (inputStringsList.size() > 0) {
 			return inputStringsList;
 		}
