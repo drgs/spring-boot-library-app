@@ -13,7 +13,6 @@ public class DemoService {
 	public static final DummyClass dummyInstance = new DummyClass();
 	
 	public String checkStringEqualsFoo(String inputString) {
-		int unusedLocalVarD = 0;
 
 		dummyInstance.displayHello();
 		
