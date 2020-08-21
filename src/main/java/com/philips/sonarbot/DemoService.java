@@ -10,7 +10,7 @@ public class DemoService {
 	private List<String> inputStringsList = new ArrayList<>();
 	
 	@SuppressWarnings({"java:S1104"})
-	public static DummyClass dummyInstance = new DummyClass();
+	public static final DummyClass dummyInstance = new DummyClass();
 	
 	public String checkStringEqualsFoo(String inputString) {
 		int unusedLocalVarA;
