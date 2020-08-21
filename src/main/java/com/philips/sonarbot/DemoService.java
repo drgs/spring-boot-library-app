@@ -18,7 +18,7 @@ public class DemoService {
 		
 		inputStringsList.add(inputString);
 		
-		return inputString.equals("foo") ?
+		return "foo".equals(inputString) ?
 				"Input string matches foo" : 
 					"Input string does not match foo";		
 	}
