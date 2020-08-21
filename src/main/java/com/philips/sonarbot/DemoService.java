@@ -15,7 +15,7 @@ public class DemoService {
 	public String checkStringEqualsFoo(String inputString) {
 		int unusedLocalVarA;
 		int unusedLocalVarB, unusedLocalVarC;
-		int unusedLocalVarD = 0;
+		int unusedLocalVarD = 0, newVarE = 1;
 
 		dummyInstance.displayHello();
 		
@@ -40,6 +40,8 @@ public class DemoService {
 //	
 	
 	public List<String> getInputStringsList() {
+		String dummyStr = "bar";
+		boolean dummyBool = dummyStr.equals("foo");
 		if (inputStringsList.size() > 0) {
 			return inputStringsList;
 		}
