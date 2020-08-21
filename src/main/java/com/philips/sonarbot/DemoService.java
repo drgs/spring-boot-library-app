@@ -26,7 +26,7 @@ public class DemoService {
 //	
 	
 	public List<String> getInputStringsList() {
-		if (inputStringsList.size() > 0) {
+		if (inputStringsList.isEmpty()) {
 			return inputStringsList;
 		}
 		return new ArrayList<>();
