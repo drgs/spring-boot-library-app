@@ -1,0 +1,7 @@
+sonar:
+  projectKey: drgs_sonar-bot-demo
+  hostname: sonarcloud.io  
+fixer:
+  hostname: localhost
+  port: 8080
+ 
