@@ -8,24 +8,24 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class DemoController {
+public class LibraryController {
 	
 	@Autowired
-	DemoService demoService;
+	LibraryService libraryService;
 	
 	@GetMapping("/")
 	public String displayHelloMessage() {
 		return "Hello";
 	}
 	
-	@GetMapping("/check-equals/{inputString}")
-	public String checkStringEqualsFoo(@PathVariable("inputString") String inputString) {
-		return demoService.checkStringEqualsFoo(inputString);
+	@GetMapping("/add/{bookName}")
+	public String addBook(@PathVariable("bookName") String bookName) {
+		return libraryService.addBook(bookName);
 	}
 	
-	@GetMapping("/getInputStrings")
-	public List<String> getInputStringsList() {
-		return demoService.getInputStringsList();
+	@GetMapping("/get/books")
+	public List<String> getAllBooks() {
+		return libraryService.getAllBooks();
 	}
 	
 }

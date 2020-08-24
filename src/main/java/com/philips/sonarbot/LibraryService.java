@@ -6,24 +6,25 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 @Service
-public class DemoService {
-	private List<String> inputStringsList = new ArrayList<>();
+public class LibraryService {
+	private List<String> bookList = new ArrayList<>();
 	
 	@SuppressWarnings({"java:S1104"})
-	public static DummyClass dummyInstance = new DummyClass();
+	public static ActionLogger actionLogger = new ActionLogger();
 	
-	public String checkStringEqualsFoo(String inputString) {
-		int unusedLocalVarA;
-		int unusedLocalVarB, unusedLocalVarC;
-		int unusedLocalVarD = 0;
+	public String addBook(String bookName) {
+		int bookNumOfPages;
+		boolean bookIsNonfiction, languageIsEnglish;
+		String isbn  = "";
 
-		dummyInstance.displayHello();
-		
-		inputStringsList.add(inputString);
-		
-		return inputString.equals("foo") ?
-				"Input string matches foo" : 
-					"Input string does not match foo";		
+		actionLogger.log("Adding book: " + bookName);
+
+		if (bookName.equals("foo")) {
+			return "We do not accept books with this title";
+		}
+
+		bookList.add(bookName);
+		return "Book with title" + bookName + "has been added";		
 	}
 
 //	public String checkStringEqualsFoo(String inputString) {
@@ -39,9 +40,9 @@ public class DemoService {
 //	}
 //	
 	
-	public List<String> getInputStringsList() {
-		if (inputStringsList.size() > 0) {
-			return inputStringsList;
+	public List<String> getAllBooks() {
+		if (bookList.size() > 0) {
+			return bookList;
 		}
 		return new ArrayList<>();
 	}
