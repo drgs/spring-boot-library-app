@@ -1,4 +1,4 @@
-package com.philips.sonarbot;
+package com.philips.libraryapp;
 
 public class ActionLogger {
 	ActionLogger() {}

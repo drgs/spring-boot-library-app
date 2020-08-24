@@ -1,4 +1,4 @@
-package com.philips.sonarbot;
+package com.philips.libraryapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

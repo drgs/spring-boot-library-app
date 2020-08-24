@@ -1,4 +1,4 @@
-package com.philips.sonarbot;
+package com.philips.libraryapp;
 
 import java.util.List;
 
